@@ -39,6 +39,7 @@ def stripURL(text):
         return "tweet has no text"
     else:
         return tmp[0]
+        
 
 #format 1/1/2000
 def formatDate(date):
@@ -61,4 +62,15 @@ def validate(username, text, date):
             return True
     return False
 
+<<<<<<< HEAD
+tweet = getTweet("https://twitter.com/michaelreeves/status/1551087064501862401")
+text = getTweetText(tweet)
+norm = stripURL(text)
+
+
+print(tweet)
+print(text)
+print(norm)
+=======
 print(validate("elonmusk", "Another orbital plane of polar satellites", "8/13/2022")) #testing purposes
+>>>>>>> de88285e38ca52ecb83e159a0126987adf4c8478
