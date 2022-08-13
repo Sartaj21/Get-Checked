@@ -71,6 +71,4 @@ norm = stripURL(text)
 print(tweet)
 print(text)
 print(norm)
-=======
-print(validate("elonmusk", "Another orbital plane of polar satellites", "8/13/2022")) #testing purposes
->>>>>>> de88285e38ca52ecb83e159a0126987adf4c8478
+

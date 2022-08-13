@@ -49,7 +49,7 @@ a {
   font-size: 2rem;
   font-family: 'Kanit', sans-serif;
   font-weight: 600;
-  
+
 }
 
 .navbar__menu {
@@ -207,6 +207,7 @@ a {
   background: #6C2BFF;
   background: linear-gradient(to right, #153AB3, #6C2BFF);
   padding: 200px 0;
+  height: 100vh;
 }
 
 .hero__container {
@@ -267,7 +268,7 @@ a {
   border-bottom: 4px solid #6C2BFF;
 }
 
-@media screen and (max-width: 768px) {
+omedia screen and (max-width: 768px) {
   .hero__heading {
     font-size: 60px;
   }
@@ -277,6 +278,36 @@ a {
   }
 }
 
+.redhero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  text-align: center;
+  padding: 30px;
+}
+
+.redhero__heading {
+  font-size: 100px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.redhero__heading span {
+  font-weight: 800;
+  background: #2BCCFF;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
+}
 /* About Section */
 .main {
   background-color: #000000;
@@ -497,6 +528,7 @@ a {
     margin: 2.5rem 0;
   }
 }
+
 
 /* Services Section */
 .services {
