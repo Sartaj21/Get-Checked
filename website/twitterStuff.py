@@ -29,6 +29,7 @@ def stripURL(text):
         return "tweet has no text"
     else:
         return tmp[0]
+        
 
 consumer_key = "4bckTJxx597EpwAgsVPB4jaZb" #api key
 consumer_secret = "Gayo42TGGDFLz8ch6hPUJkY9Kjcv9KPi5kALDjcFoMMn30PlgS" #api key secret
@@ -41,6 +42,8 @@ client = tweepy.Client(bearer_token)
 tweet = getTweet("https://twitter.com/michaelreeves/status/1551087064501862401")
 text = getTweetText(tweet)
 norm = stripURL(text)
+
+
 print(tweet)
 print(text)
 print(norm)
