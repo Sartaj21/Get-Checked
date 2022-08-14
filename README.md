@@ -1,3 +1,5 @@
+Note if you clone it will not work until your create a config.py with your own tokens for the twitter api.
+
 ## Inspiration
 A big problem that we have seen in our area over the past few years is the wildfire-like spread of misinformation, largely stemming from social media and online/news. In order to combat this problem we decided to create a website that can check quotes and facts for validity, while also educating our users on the topic of misinformation. 
 ## What it does
