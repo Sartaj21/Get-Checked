@@ -41,13 +41,21 @@
               </ul>
           </div>
       </nav>
-        <form action = "/cgi-bin/hello_get.py" method = "get">
+          <form action="{{ url_for('predict')}}" method="POST">
+    	<textarea  name="message" rows="6" cols="50" required="required" style="font-size: 18pt"></textarea>
+		<br> </br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
 
-             Name: <input type = "text" name = "Link:">  <br />
+        	<div class="results">
 
-            <input type = "button" value = "Submit" />
-            
+	{% if prediction == ['FAKE']%}
+	<h2 style="color:red;">Fake News📰 </h2>
+	{% elif prediction == ['REAL']%}
+				<h2 style="color:green;"><b>Real News📰</b></h2>
+	{% endif %}
 
-            </form>
+	</div>
+
+    </form>
       </body>
     </html>
