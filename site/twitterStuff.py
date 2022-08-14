@@ -2,12 +2,12 @@ from flask import Flask, request, render_template
 
 import tweepy
 import datetime
-
-consumer_key = "4bckTJxx597EpwAgsVPB4jaZb" #api key
-consumer_secret = "Gayo42TGGDFLz8ch6hPUJkY9Kjcv9KPi5kALDjcFoMMn30PlgS" #api key secret
-access_token = "1558230505165824002-Vbimdu2lv7CyBHFuZYVbm8qb8lArVI"
-access_token_secret = "PTPU5l7S3MydhTrcLXaoG52wvcwhExRF83u4NisDAtaBz"
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAPOdfwEAAAAAp498eSCHq4PudtLysRj0jSDFd2Q%3Dqs4lKuGovdEJxWehNIdFBF1qWqxHmyviIOiu60QXONgdo6LGtQ"
+import config
+consumer_key = config.consumer_key
+consumer_secret = config.consumer_secret #api key secret
+access_token = config.access_token
+access_token_secret = config.access_token_secret
+bearer_token = config.bearer_token
 
 client = tweepy.Client(bearer_token)
 
