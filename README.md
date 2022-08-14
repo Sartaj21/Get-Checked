@@ -15,3 +15,6 @@ We all learned front-end skills and concepts of machine learning. This challenge
 ## What's next for Get Checked
 We plan to use the concept on other social media platforms like Facebook and Instagram for us to encompass more media. Additionally, we would like to use it for users to type in general claims and for the computer to accurately tell us if it is true to false. 
 
+##Video
+(https://youtu.be/v8D7iFGDGlI) 
+In this video we also show a demo of the misinformation checker. We go on a new article where the headline is about someone claming something. The checker shows the result that this is true news. This is correct because someone did make that claim. 
