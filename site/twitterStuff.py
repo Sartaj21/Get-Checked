@@ -1,3 +1,4 @@
+from flask import Flask, request, render_template
 
 import tweepy
 import datetime
@@ -62,13 +63,20 @@ def validate(username, text, date):
             return True
     return False
 
-<<<<<<< HEAD
 tweet = getTweet("https://twitter.com/michaelreeves/status/1551087064501862401")
 text = getTweetText(tweet)
 norm = stripURL(text)
 
+app = Flask(__name__)
+
+@app.route("/")
+
+def my_form():
+    return render_template("form.html")
 
 print(tweet)
 print(text)
 print(norm)
+print(validate("elonmusk", "Another orbital plane of polar satellites", "8/13/2022")) #testing purposes
+
 

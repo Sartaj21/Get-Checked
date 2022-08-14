@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Checked</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
     <link rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
           integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
@@ -24,16 +24,16 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/website/index.html" class="navbar__links" id="home-page">Home</a>
+                    <a href="/" class="navbar__links" id="home-page">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/website/learn.html" class="navbar__links" id="about-page">Learn</a>
+                    <a href="/learn" class="navbar__links" id="about-page">Learn</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/website/quote.html" class="navbar__links" id="signup">Quote Check</a>
+                    <a href="/quote" class="navbar__links" id="signup">Quote Check</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/website/fact.html" class="button" id="signup">Fact Check</a>
+                    <a href="/fact" class="button" id="signup">Fact Check</a>
                 </li>
             </ul>
         </div>
@@ -45,19 +45,22 @@
         <div class="hero__container">
             <h1 class="hero__heading">Check your <span id="auto">Quote</span></h1>
 
-            <form>
+            <form class="form" method="POST">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="quote" placeholder="Enter Quote" />
+                    <input type="text" class="form-control" name="quote" placeholder="Enter Quote" />
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="author" placeholder="Enter Username" />
+                    <input type="text" class="form-control" name="author" placeholder="Enter Username" />
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="date" placeholder="mm/dd/yyyy" />
+                    <input type="text" class="form-control" name="date" placeholder="mm/dd/yyyy" />
                 </div>
                 <button type="submit" class="button" id="submit">Submit</button>
             </form>
+                    {{value}}
+
         </div>
+
     </div>
 
 

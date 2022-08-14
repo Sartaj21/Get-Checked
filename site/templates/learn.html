@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Get Checked</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -17,41 +17,38 @@
       </head>
       <body>
         <!-- Navbar Section -->
-        
         <nav class="navbar">
           <div class="navbar__container">
-            <a href="#home" id="navbar__logo">Get Checked</a>
-            <div class="navbar__toggle" id="mobile-menu">
-              <span class="bar"></span> <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-              <li class="navbar__item">
-                <a href="/website/index.html" class="navbar__links" id="home-page">Home</a>
-              </li>
-              <li class="navbar__item">
-                <a href="/website/learn.html" class="navbar__links" id="about-page">Learn</a>
-              </li>
-              <li class="navbar__item">
-                <a href="/website/quote.html" class="navbar__links" id="signup">Quote Check</a>
-            </li>
-            <li class="navbar__btn">
-              <a href="/website/fact.html" class="button" id="signup">Fact Check</a>
-          </li>
-            </ul>
+              <a href="/website/index/html" id="navbar__logo">Get Checked</a>
+              <div class="navbar__toggle" id="mobile-menu">
+                  <span class="bar"></span> <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+              <ul class="navbar__menu">
+                  <li class="navbar__item">
+                      <a href="/" class="navbar__links" id="home-page">Home</a>
+                  </li>
+                  <li class="navbar__item">
+                      <a href="/learn" class="navbar__links" id="about-page">Learn</a>
+                  </li>
+                  <li class="navbar__item">
+                      <a href="/quote" class="navbar__links" id="signup">Quote Check</a>
+                  </li>
+                  <li class="navbar__btn">
+                      <a href="/fact" class="button" id="signup">Fact Check</a>
+                  </li>
+              </ul>
           </div>
-        </nav>
+      </nav>
  <!-- Hero Section -->
  <div class="redhero" id="home">
 
-<<<<<<< HEAD
   <div class="redhero__container">
       <h1 class="redhero__heading">See the <span id="auto">Red Flags</span></h1>
 
   </div>
 </div>
      
-=======
  <!-- Hero Section -->
  <div class="hero" id="home">
 
@@ -61,7 +58,6 @@
   </div>
 </div>
 
->>>>>>> 4144b903a6b8f089251aeb56558426236f32e2ea
 <!-- Services Section -->
 <div class="services" id="services">
   <h1>Resource Checkers</h1>
